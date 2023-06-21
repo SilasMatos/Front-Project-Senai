@@ -3,6 +3,7 @@ import logo from "../../Imagens/logo-nav.png";
 import { Navbar, Nav } from "react-bootstrap";
 import { FaUserAlt } from 'react-icons/fa';
 import '../Styles/NavBar.css'
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -23,10 +24,12 @@ function NavBar() {
             <Nav.Link id="link-nav" href="#link">
               Contato
             </Nav.Link>
-            <div className='link-nav-login'>
+            <div className='link-nav-login'> 
+            <Link to="/login">
             <Nav.Link id="link-nav" href="#link">
               Conta ProSen
             </Nav.Link>
+            </Link>
             <FaUserAlt id='icon-nav'/>
             </div>
           </Nav>
